@@ -1,2 +1,2 @@
 # Echo
-A simple voice chat platform
+A simple voice and text chat platform
