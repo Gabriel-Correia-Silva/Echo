@@ -1,0 +1,19 @@
+services:
+  postegres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: banco_test
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD:  postgres_password
+    ports:
+      - "5432:5432"
+#  app:
+#    build: .
+#    ports:
+#      - "8080:8008"
+#    depends_on:
+#      - postegres
+#    environment:
+#      SPRING_DATASOUCE_URL: jdbc:postgresql://postgres:5432/banco-test
+#      SPRING_DATASOUCE_USERNAME: postegres
+#      SPRING_DATASOUCE_PASSWORD: postgres_password
